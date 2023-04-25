@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 
 export async function getStaticProps(context) {
     const pokemons = await fetch('https://pokeapi.co/api/v2/pokedex/2/')
@@ -25,6 +26,9 @@ export default function Home(props) {
     return (
         <div>
             Pokedex - JoaoVitorChaves-05
+            <Link href="/sobre">
+                <a>Sobre o projeto</a>
+            </Link>
             <ul>
                 {pokemons.map((pokemon) => (
                     <li key={pokemon.entry_number}>
