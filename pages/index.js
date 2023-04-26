@@ -25,14 +25,17 @@ export default function Home(props) {
 
     return (
         <div>
-            Pokedex - JoaoVitorChaves-05
+            <h1>Pokedex - JoaoVitorChaves-05 </h1>
             <Link href="/sobre">
                 <a>Sobre o projeto</a>
             </Link>
             <ul>
                 {pokemons.map((pokemon) => (
                     <li key={pokemon.entry_number}>
-                        {pokemon.pokemon_species.name}
+                        <Link href={`/pokemon/${pokemon.entry_number}`}>
+                            <a>{pokemon.pokemon_species.name}</a>
+                        </Link>
+                        
                     </li>
                 ))}
             </ul>
