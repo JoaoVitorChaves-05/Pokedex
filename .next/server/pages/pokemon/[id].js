@@ -27,7 +27,7 @@ function Pokemon({ pokemon  }) {
                 children: pokemon.name
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                src: "???",
+                src: pokemon.sprites.front_default,
                 alt: "Imagem de um pokemon"
             })
         ]

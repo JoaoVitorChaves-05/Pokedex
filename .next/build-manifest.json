@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/lE3VLBL1QupjVUhiuz27Q/_buildManifest.js",
-    "static/lE3VLBL1QupjVUhiuz27Q/_ssgManifest.js"
+    "static/zabQpKhEyUwV5oI3D1lMk/_buildManifest.js",
+    "static/zabQpKhEyUwV5oI3D1lMk/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -33,7 +33,7 @@
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-cda2f1305c3d9424.js",
       "static/chunks/main-833d9ee26cb96e76.js",
-      "static/chunks/pages/pokemon/[id]-1fc00b5d3aa626b4.js"
+      "static/chunks/pages/pokemon/[id]-4bdf9ba40f89a7c2.js"
     ],
     "/sobre": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",

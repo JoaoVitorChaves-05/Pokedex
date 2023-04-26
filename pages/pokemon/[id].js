@@ -4,7 +4,7 @@ export default function Pokemon({ pokemon }) {
     return (
         <div>
             <h1>{pokemon.name}</h1>
-            <img src="???" alt="Imagem de um pokemon" />
+            <img src={pokemon.sprites.front_default} alt="Imagem de um pokemon" />
         </div>
     )
 }
