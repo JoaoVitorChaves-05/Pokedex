@@ -1,13 +1,23 @@
 import React from "react";
+import PropTypes from "prop-types"
 
-export default function Pokemon({ pokemon }) {
+export default function Pokemon({ pokemon, pokemon_id }) {
     return (
         <div>
             <h1>{pokemon.name}</h1>
-            <img src={pokemon.sprites.front_default} alt="Imagem de um pokemon" />
+            <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/${pokemon_id}.gif`} alt="Imagem de um pokemon" />
         </div>
     )
 }
+
+Pokemon.propTypes = {
+    pokemon: PropTypes.shape({
+        name: PropTypes.string,
+        sprites: PropTypes.shape({
+        front_default: PropTypes.string,
+        }),
+    }).isRequired,
+};
 
 export async function getStaticPaths() {
     const paths = []
@@ -34,7 +44,8 @@ export async function getStaticProps({ params }) {
 
     return {
         props: {
-            pokemon
+            pokemon,
+            pokemon_id: params.id
         }
     }
 }
